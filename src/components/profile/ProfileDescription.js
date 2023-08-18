@@ -1,10 +1,17 @@
+import {
+  DescriptionWrapper,
+  Avatar,
+  Text,
+  TextUserName,
+} from './ProfileDescription.styled';
+
 export const Description = ({ descr: { avatar, username, tag, location } }) => {
   return (
-    <div>
-      <img src={avatar} alt="User avatar" />
-      <p>{username}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
-    </div>
+    <DescriptionWrapper>
+      <Avatar src={avatar} alt="User avatar" />
+      <TextUserName>{username}</TextUserName>
+      <Text>@{tag}</Text>
+      <Text>{location}</Text>
+    </DescriptionWrapper>
   );
 };

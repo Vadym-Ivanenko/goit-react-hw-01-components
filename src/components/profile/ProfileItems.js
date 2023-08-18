@@ -1,18 +1,25 @@
+import {
+  ProfileItem,
+  ProfileList,
+  DataDescr,
+  Data,
+} from './ProfileItems.styled';
+
 export const ProfileItems = ({ item: { stats } }) => {
   return (
-    <ul>
-      <li>
-        <span>Followers</span>
-        <span>{stats.followers}</span>
-      </li>
-      <li>
-        <span>Views</span>
-        <span>{stats.views}</span>
-      </li>
-      <li>
-        <span>Likes</span>
-        <span>{stats.likes}</span>
-      </li>
-    </ul>
+    <ProfileItem>
+      <ProfileList>
+        <DataDescr>Followers</DataDescr>
+        <Data>{stats.followers}</Data>
+      </ProfileList>
+      <ProfileList>
+        <DataDescr>Views</DataDescr>
+        <Data>{stats.views}</Data>
+      </ProfileList>
+      <ProfileList>
+        <DataDescr>Likes</DataDescr>
+        <Data>{stats.likes}</Data>
+      </ProfileList>
+    </ProfileItem>
   );
 };

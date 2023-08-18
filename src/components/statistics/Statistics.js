@@ -1,11 +1,12 @@
 import { StatisticList } from './StatisticsList';
 import { Title } from './StatisticsTitile';
+import { SectionWrapper } from './Statistics.styled';
 
 export const Statistics = ({ data }) => {
   return (
-    <section>
+    <SectionWrapper>
       <Title title={data} />
       <StatisticList statList={data} />
-    </section>
+    </SectionWrapper>
   );
 };
