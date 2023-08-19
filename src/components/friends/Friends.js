@@ -1,9 +1,10 @@
 import { FriendsItem } from './FriendsItem';
+import { Wrapper } from './friends-styled/Friensd.styled';
 
 export const Friends = ({ friends }) => {
   return (
-    <div>
+    <Wrapper>
       <FriendsItem friends={friends} />
-    </div>
+    </Wrapper>
   );
 };

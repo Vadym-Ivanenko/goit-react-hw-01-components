@@ -3,7 +3,7 @@ import {
   ProfileList,
   DataDescr,
   Data,
-} from './ProfileItems.styled';
+} from './profile-styled/ProfileItems.styled';
 
 export const ProfileItems = ({ item: { stats } }) => {
   return (

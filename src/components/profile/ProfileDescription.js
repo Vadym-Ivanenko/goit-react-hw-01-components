@@ -3,7 +3,7 @@ import {
   Avatar,
   Text,
   TextUserName,
-} from './ProfileDescription.styled';
+} from './profile-styled/ProfileDescription.styled';
 
 export const Description = ({ descr: { avatar, username, tag, location } }) => {
   return (

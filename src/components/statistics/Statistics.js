@@ -1,6 +1,6 @@
 import { StatisticList } from './StatisticsList';
 import { Title } from './StatisticsTitile';
-import { SectionWrapper } from './Statistics.styled';
+import { SectionWrapper } from './statistics-styled/Statistics.styled';
 
 export const Statistics = ({ data }) => {
   return (

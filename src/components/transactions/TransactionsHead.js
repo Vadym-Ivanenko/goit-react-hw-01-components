@@ -1,10 +1,11 @@
+import { HeadComponents } from './transactions-styled/TransactionsHead.styled';
 export const TransactionHead = () => {
   return (
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <HeadComponents>Type</HeadComponents>
+        <HeadComponents>Amount</HeadComponents>
+        <HeadComponents>Currency</HeadComponents>
       </tr>
     </thead>
   );
