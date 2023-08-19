@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   ProfileItem,
   ProfileList,
@@ -22,4 +23,10 @@ export const ProfileItems = ({ item: { stats } }) => {
       </ProfileList>
     </ProfileItem>
   );
+};
+
+ProfileItems.propTypes = {
+  item: PropTypes.shape({
+    stats: PropTypes.objectOf(PropTypes.number.isRequired),
+  }),
 };

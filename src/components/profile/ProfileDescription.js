@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   DescriptionWrapper,
   Avatar,
@@ -14,4 +15,13 @@ export const Description = ({ descr: { avatar, username, tag, location } }) => {
       <Text>{location}</Text>
     </DescriptionWrapper>
   );
+};
+
+Description.propTypes = {
+  descr: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+  }),
 };
