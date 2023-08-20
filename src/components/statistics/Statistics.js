@@ -1,11 +1,11 @@
-import { StatisticList } from './StatisticsList';
-import { Title } from './StatisticsTitile';
-import { SectionWrapper } from './statistics-styled/Statistics.styled';
+import { StatisticList } from './statisticsList/StatisticsList';
+import { Title } from './statisticsTytle/StatisticsTitile';
+import { SectionWrapper } from './Statistics.styled';
 
-export const Statistics = ({ data }) => {
+export const Statistics = ({ data, title }) => {
   return (
     <SectionWrapper>
-      <Title title={data} />
+      <Title title={title} />
       <StatisticList statList={data} />
     </SectionWrapper>
   );

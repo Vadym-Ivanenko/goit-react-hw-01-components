@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const Item = styled.ul`
-  margin: 0;
+export const List = styled.ul`
+  max-width: 200px;
+  margin: 50px auto 0 auto;
   padding: 15px 0;
   list-style: none;
 `;
 
-export const List = styled.li`
+export const Item = styled.li`
   display: flex;
   align-items: center;
   gap: 15px;
@@ -14,12 +15,4 @@ export const List = styled.li`
   padding: 10px;
 
   box-shadow: 5px 11px 18px -10px rgba(66, 68, 90, 0.88);
-`;
-
-export const Online = styled.span`
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-
-  background-color: ${props => (props.$online ? 'green' : 'red')};
 `;

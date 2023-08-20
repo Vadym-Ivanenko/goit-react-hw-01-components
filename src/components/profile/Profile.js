@@ -1,6 +1,6 @@
-import { Description } from './ProfileDescription';
-import { ProfileItems } from './ProfileItems';
-import { Wrapper } from './profile-styled/Profile.styled';
+import { Description } from './profileDescription/ProfileDescription';
+import { ProfileItems } from './profileItems/ProfileItems';
+import { Wrapper } from './Profile.styled';
 
 export const Profile = ({ user }) => {
   return (

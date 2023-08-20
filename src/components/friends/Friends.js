@@ -1,10 +1,16 @@
-import { FriendsItem } from './FriendsItem';
-import { Wrapper } from './friends-styled/Friensd.styled';
+import { Friends } from './friendsItem/FriendsItem';
+import { List, Item } from './Friensd.styled';
 
-export const Friends = ({ friends }) => {
+export const FriendsList = ({ friends }) => {
   return (
-    <Wrapper>
-      <FriendsItem friends={friends} />
-    </Wrapper>
+    <List>
+      {friends.map(friend => {
+        return (
+          <Item key={friend.id}>
+            <Friends persons={friend} />
+          </Item>
+        );
+      })}
+    </List>
   );
 };

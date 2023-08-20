@@ -1,6 +1,6 @@
-import { TransactionHistory } from './TransactionHistory';
-import { TransactionHead } from './TransactionsHead';
-import { Table } from './transactions-styled/Transactions.styled';
+import { TransactionHistory } from './transactionHistory/TransactionHistory';
+import { TransactionHead } from './transactionHead/TransactionsHead';
+import { Table } from './Transactions.styled';
 
 export const Transactions = ({ items }) => {
   return (

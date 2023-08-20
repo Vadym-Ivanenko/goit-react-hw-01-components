@@ -4,7 +4,7 @@ import {
   Avatar,
   Text,
   TextUserName,
-} from './profile-styled/ProfileDescription.styled';
+} from './ProfileDescription.styled';
 
 export const Description = ({ descr: { avatar, username, tag, location } }) => {
   return (

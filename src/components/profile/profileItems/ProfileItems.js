@@ -4,7 +4,7 @@ import {
   ProfileList,
   DataDescr,
   Data,
-} from './profile-styled/ProfileItems.styled';
+} from './ProfileItems.styled';
 
 export const ProfileItems = ({ item: { stats } }) => {
   return (

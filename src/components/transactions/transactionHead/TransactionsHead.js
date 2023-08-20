@@ -1,4 +1,4 @@
-import { HeadComponents } from './transactions-styled/TransactionsHead.styled';
+import { HeadComponents } from './TransactionsHead.styled';
 export const TransactionHead = () => {
   return (
     <thead>
